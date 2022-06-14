@@ -53,6 +53,8 @@ dev_dependencies:
   scoped_model: ^1.1.0 #bloc插件
   date_format: ^2.0.6 #日期组件
   fluttertoast: ^8.0.9 #toast组件
+  flutter_splash_screen: ^1.0.0+6
+  shared_preferences: ^2.0.15 #sp插件
 #  flutter_swiper: ^1.1.6 #轮播图组件
 #  flutter_cupertino_date_picker: ^1.0.26+2 #三方日期选择器
 

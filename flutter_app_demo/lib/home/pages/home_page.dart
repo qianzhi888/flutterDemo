@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_demo/home/common/my_dialog.dart';
 import 'package:flutter_app_demo/home/common/router_path.dart';
 import 'package:flutter_app_demo/home/search_page.dart';
 ///首页
@@ -77,6 +78,15 @@ class _HomePageState extends State<HomePage> {
           ElevatedButton(onPressed: (){
             Navigator.pushNamed(context, RouterPath.dialogPage);
           }, child: Text("跳转到Dialog组件页面")),
+
+          SizedBox(width: 20,),
+          ElevatedButton(onPressed: (){
+            ///显示自定义dialog
+            showDialog(context: context, builder: (context){
+              return MyDialog(title: "我是标题",content: "我是内容",);
+            });
+
+          }, child: Text("弹出自定义dialog")),
         ],
       ),
     );

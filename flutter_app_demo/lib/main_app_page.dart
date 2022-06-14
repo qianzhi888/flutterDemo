@@ -3,6 +3,7 @@ import 'package:flutter_app_demo/home/common/router_path.dart';
 import 'package:flutter_app_demo/home/pages/tabs.dart';
 import 'package:flutter_app_demo/home/routes/routes.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_splash_screen/flutter_splash_screen.dart';
 ///命名路由 需要在MaterialApp根组件中定义
 class MyDemoApp10 extends StatefulWidget {
   @override
@@ -10,6 +11,7 @@ class MyDemoApp10 extends StatefulWidget {
 }
 
 class HomeBottomTab extends State<MyDemoApp10> {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -40,5 +42,14 @@ class HomeBottomTab extends State<MyDemoApp10> {
       ///可以传值的路由
       onGenerateRoute: baseGernerateRoute,
     );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    // Future.delayed(Duration(milliseconds: 1000),(){
+    //   ///关闭启动屏
+    //   FlutterSplashScreen.hide();
+    // });
   }
 }
