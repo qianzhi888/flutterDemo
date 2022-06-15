@@ -34,6 +34,7 @@ void main() {
 
   /*var testClass2 = TestClass2();
   testClass2.log();*/
+
   runApp(MyDemoApp10());
 }
 

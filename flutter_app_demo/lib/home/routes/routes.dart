@@ -3,6 +3,7 @@ import 'package:flutter_app_demo/home/pages/appbar_demo.dart';
 import 'package:flutter_app_demo/home/pages/ask_for_leave_page.dart';
 import 'package:flutter_app_demo/home/pages/banner_page.dart';
 import 'package:flutter_app_demo/home/pages/button_demo_page.dart';
+import 'package:flutter_app_demo/home/pages/cart/cart_page.dart';
 import 'package:flutter_app_demo/home/pages/date_widget_page.dart';
 import 'package:flutter_app_demo/home/pages/dialog_page.dart';
 import 'package:flutter_app_demo/home/pages/tabbar_controller_page.dart';
@@ -13,9 +14,13 @@ import 'package:flutter_app_demo/home/form_page.dart';
 import 'package:flutter_app_demo/home/pages/tabs.dart';
 import 'package:flutter_app_demo/home/product_page.dart';
 import 'package:flutter_app_demo/home/search_page.dart';
+import 'package:flutter_app_demo/home/state/provider/provider_page_demo.dart';
+import 'package:flutter_app_demo/home/state/provider/state_privider_test.dart';
+import 'package:flutter_app_demo/home/state/state_manager_demo.dart';
 import 'package:flutter_app_demo/home/user/login_page.dart';
 import 'package:flutter_app_demo/home/user/register_page.dart';
 import 'package:flutter_app_demo/home/common/router_path.dart';
+import '../state/state_manager_demo2.dart';
 
 final routes = {
   RouterPath.tabsPage:(context)=>TabsPage(),
@@ -36,6 +41,11 @@ final routes = {
   RouterPath.dateWidgetPage: (context) => DateWidgetPage(),
   RouterPath.bannerPage: (context) => BannerPage(),
   RouterPath.dialogPage: (context) => DialogPage(),
+  RouterPath.stateManagerDemo: (context) => StateManageDemo(),
+  RouterPath.stateProviderDemo: (context) => StateProviderDemo(),
+  RouterPath.providerPageDemo1: (context) => ProviderPageDemo1(),
+  RouterPath.cartPage: (context) => CartPage(),
+  // RouterPath.stateManagerDemo: (context) => StateManageDemo2(),
 };
 
 var baseGernerateRoute = (RouteSettings settings) {

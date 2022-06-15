@@ -19,5 +19,9 @@ class RouterPath{
   static const dateWidgetPage = "/date_widget_page";
   static const bannerPage = "/banner_page";
   static const dialogPage = "/dialog_page";
+  static const stateManagerDemo = "/state_manager_demo";
+  static const stateProviderDemo = "/state_provider_demo";
+  static const providerPageDemo1 = "/provider_page_demo1";
+  static const cartPage = "/cart_page";
 
 }
