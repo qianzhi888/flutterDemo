@@ -10,7 +10,7 @@ class MyAppDemo7 extends StatelessWidget {
         appBar: AppBar(
           title: Text("flutterDemo"),
         ),
-        body: TestDemoWidget(),
+        body: HomeContent3(),
       ),
       theme: ThemeData(primarySwatch: Colors.blue),
     );
@@ -82,10 +82,10 @@ class HomeContent3 extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           Positioned(
-            left: 10,
-            right: 10,
-            top: 10,
-            bottom: 10,
+            left: 1,
+            right: 1,
+            top: 1,
+            bottom: 1,
             child: Icon(
               Icons.home,
               size: 40,
@@ -101,12 +101,17 @@ class HomeContent3 extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 20,
+            bottom: -20,
             left: 20,
-            child: Icon(
-              Icons.settings,
-              size: 60,
-              color: Colors.blue,
+            child: InkWell(
+              onTap: (){
+                print("settings");
+              },
+              child: Icon(
+                Icons.settings,
+                size: 60,
+                color: Colors.blue,
+              ),
             ),
           ),
           Positioned(

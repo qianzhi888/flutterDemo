@@ -13,6 +13,8 @@ import 'package:flutter_app_demo/home_content8.dart';
 import 'package:flutter_app_demo/home_content9.dart';
 import 'package:flutter_app_demo/home_content10.dart';
 import 'package:flutter_app_demo/main_app_page.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 
 class Result<T> {
   late T data;
@@ -25,7 +27,7 @@ class Result<T> {
   }
 }
 
-void main() {
+void main() async{
   //testFunction(name: "张三",sex: null);
   // testFuncation1("", 1, "");
 
@@ -34,7 +36,7 @@ void main() {
 
   /*var testClass2 = TestClass2();
   testClass2.log();*/
-
+  await ScreenUtil.ensureScreenSize();
   runApp(MyDemoApp10());
 }
 

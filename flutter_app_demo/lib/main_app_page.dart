@@ -7,6 +7,7 @@ import 'package:flutter_app_demo/home/state/state_manager_demo.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_splash_screen/flutter_splash_screen.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'home/state/provider/state_privider_test.dart';
 
@@ -19,6 +20,8 @@ class MyDemoApp10 extends StatefulWidget {
 class HomeBottomTab extends State<MyDemoApp10> {
   @override
   Widget build(BuildContext context) {
+    ScreenUtil.init(context);
+
     ///在MaterialApp中添加Provider
     return MultiProvider(
       providers: [
