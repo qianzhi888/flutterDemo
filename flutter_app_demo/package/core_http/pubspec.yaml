@@ -11,6 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   dio: ^4.0.6
+  crypto: ^2.1.5
 
   core_tools: # 工具模块
     path: ../core_tools

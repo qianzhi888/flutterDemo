@@ -112,6 +112,16 @@ class _HomePageState extends State<HomePage> {
               Navigator.pushNamed(context, RouterPath.cartPage);
             }, child: Text("跳转到购物车页面")),
 
+            SizedBox(width: 20,),
+            ElevatedButton(onPressed: (){
+              Navigator.pushNamed(context, RouterPath.refreshPage);
+            }, child: Text("跳转到上拉加载下拉刷新列表")),
+
+            SizedBox(width: 20,),
+            ElevatedButton(onPressed: (){
+              Navigator.pushNamed(context, RouterPath.loadingPage);
+            }, child: Text("跳转到loading页面")),
+
           ],
         ),
       ),

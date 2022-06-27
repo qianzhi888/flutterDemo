@@ -6,6 +6,7 @@ import 'package:flutter_app_demo/home/pages/button_demo_page.dart';
 import 'package:flutter_app_demo/home/pages/cart/cart_page.dart';
 import 'package:flutter_app_demo/home/pages/date_widget_page.dart';
 import 'package:flutter_app_demo/home/pages/dialog_page.dart';
+import 'package:flutter_app_demo/home/pages/loading_page.dart';
 import 'package:flutter_app_demo/home/pages/tabbar_controller_page.dart';
 import 'package:flutter_app_demo/home/pages/text_field_page.dart';
 import 'package:flutter_app_demo/home/pages/user_page.dart';
@@ -20,6 +21,7 @@ import 'package:flutter_app_demo/home/state/state_manager_demo.dart';
 import 'package:flutter_app_demo/home/user/login_page.dart';
 import 'package:flutter_app_demo/home/user/register_page.dart';
 import 'package:flutter_app_demo/home/common/router_path.dart';
+import '../pages/refresh_page.dart';
 import '../state/state_manager_demo2.dart';
 
 final routes = {
@@ -45,6 +47,7 @@ final routes = {
   RouterPath.stateProviderDemo: (context) => StateProviderDemo(),
   RouterPath.providerPageDemo1: (context) => ProviderPageDemo1(),
   RouterPath.cartPage: (context) => CartPage(),
+  RouterPath.loadingPage: (context) => LoadingPage(),
   // RouterPath.stateManagerDemo: (context) => StateManageDemo2(),
 };
 

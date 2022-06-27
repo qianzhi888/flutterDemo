@@ -23,5 +23,7 @@ class RouterPath{
   static const stateProviderDemo = "/state_provider_demo";
   static const providerPageDemo1 = "/provider_page_demo1";
   static const cartPage = "/cart_page";
+  static const refreshPage = "/refresh_page";
+  static const loadingPage = "/loading_page";
 
 }
