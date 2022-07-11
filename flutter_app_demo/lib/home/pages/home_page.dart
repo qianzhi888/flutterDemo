@@ -122,6 +122,11 @@ class _HomePageState extends State<HomePage> {
               Navigator.pushNamed(context, RouterPath.loadingPage);
             }, child: Text("跳转到loading页面")),
 
+            SizedBox(width: 20,),
+            ElevatedButton(onPressed: (){
+              Navigator.pushNamed(context, RouterPath.getXTestPage);
+            }, child: Text("跳转到getX练习页面")),
+
           ],
         ),
       ),

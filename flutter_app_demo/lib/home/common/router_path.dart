@@ -25,5 +25,7 @@ class RouterPath{
   static const cartPage = "/cart_page";
   static const refreshPage = "/refresh_page";
   static const loadingPage = "/loading_page";
+  static const getXTestPage = "/getx_test_page";
+  static const getxCounterGetPage = "/getx_counter_get_page";
 
 }

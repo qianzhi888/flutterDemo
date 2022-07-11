@@ -21,6 +21,8 @@ import 'package:flutter_app_demo/home/state/state_manager_demo.dart';
 import 'package:flutter_app_demo/home/user/login_page.dart';
 import 'package:flutter_app_demo/home/user/register_page.dart';
 import 'package:flutter_app_demo/home/common/router_path.dart';
+import '../../counter_get/view.dart';
+import '../pages/getx/getx_test_page.dart';
 import '../pages/refresh_page.dart';
 import '../state/state_manager_demo2.dart';
 
@@ -48,6 +50,8 @@ final routes = {
   RouterPath.providerPageDemo1: (context) => ProviderPageDemo1(),
   RouterPath.cartPage: (context) => CartPage(),
   RouterPath.loadingPage: (context) => LoadingPage(),
+  RouterPath.getXTestPage: (context) => GetXTestPage(),
+  RouterPath.getxCounterGetPage: (context) => CounterGetPage(),
   // RouterPath.stateManagerDemo: (context) => StateManageDemo2(),
 };
 
